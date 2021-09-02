@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+        <titlle>User list</titlle>
+        
+    </head>
+
+    <body>
+        <h3>User List</h3>
+       
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Action</th>
+            </tr>
+            {{range .user}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.Email}}</td>
+                <td>{{.Mobile}}</td>
+                <td>Edit | Delete</td>
+
+                
+            </tr>
+            
+            {{end}}
+        </table>
+
+        <a  href="/product/add">ADD</a>
+    </body>
+</html>
